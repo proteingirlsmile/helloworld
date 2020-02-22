@@ -11,7 +11,7 @@ pipeline{
                 sh "printenv"
             }
             post{
-                chagned{
+                changed{
                     echo "pipeline post changes"
                 }
                 always{
