@@ -30,7 +30,7 @@ pipeline{
                     echo "pipeline post changes"
                 }
                 always{
-                    echo "stage post alwasy"
+                    junit testResults: "**/target/surefire-reports/*.xml"
                 }
             }
         }
