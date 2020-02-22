@@ -1,13 +1,13 @@
 pipeline{
     agent any
-    // tools{
-    //     maven 'mvn-3.5.4'
-    // }
+    tools{
+        maven 'mvn-3.5.4'
+    }
     stages{
         stage('Build'){
             steps{
                 echo 'Hello world'
-                // sh "mvn clean package"
+                sh "mvn clean package"
                 sh "printenv"
             }
             post{
