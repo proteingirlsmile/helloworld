@@ -7,4 +7,8 @@ public class FirstTest {
     public void myTest(){
         assertEquals(1,1);
     }
+    @Test
+    public void myTest2(){
+        assertEquals(1,2);
+    }
 }
